@@ -124,7 +124,7 @@ following license agreement:
     fonts at gnome dot org.
 
 This project makes use of the MinUnit C testing framework under the
-following license agreement (from http://www.jera.com/techinfo/jtns/jtn002.html):
+following license agreement (from http://www.jera.com/techinfo/jtns/jtn002.html ):
 
     You may use the code in this tech note for any purpose, with the 
     understanding that it comes with NO WARRANTY.
