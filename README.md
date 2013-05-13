@@ -18,7 +18,7 @@ machines such as the TRS-80 Model I, II, III, and 4. While that family
 of computers used a Zilog Z80 microprocessor, the Color Computer family used 
 a Motorola 6809E processor running at 0.89 MHz. 
 
-## Current Status - April 5, 2013
+## Current Status - May 13, 2013
 
 Please note that this project is not yet complete. As such, there is currently 
 no complete set of sourcefiles available online. 
@@ -122,3 +122,9 @@ following license agreement:
     Software without prior written authorization from the Gnome Foundation
     or Bitstream Inc., respectively. For further information, contact:
     fonts at gnome dot org.
+
+This project makes use of the MinUnit C testing framework under the
+following license agreement from http://www.jera.com/techinfo/jtns/jtn002.html:
+
+    You may use the code in this tech note for any purpose, with the 
+    understanding that it comes with NO WARRANTY.

@@ -5,7 +5,7 @@
  * @copyright MIT style license - see the LICENSE file for details
  * @copyright @verbinclude LICENSE
  *
- * This project is represents a Color Computer 3 emulator.
+ * This project represents a Color Computer 3 emulator.
  *
  * In addition to the emulator keys, there are several special keys: 
  *
@@ -20,10 +20,6 @@
 
 #include <stdlib.h>
 #include "trs80e.h"
-
-/* L O C A L S ***************************************************************/
-
-int run_tests_flag = FALSE;
 
 /* F U N C T I O N S *********************************************************/
 
@@ -76,7 +72,6 @@ print_help(void)
     printf("  -s SCALE     the scale factor to apply to the display ");
     printf("(default is 2)\n");
     printf("  -t           starts the CPU up in trace mode\n");
-    printf("  -u           runs the unit tests and exits\n");
 }
 
 /******************************************************************************/
@@ -123,10 +118,6 @@ parse_options(int argc, char **argv)
                     cpu.state = CPU_DEBUG;
                     break;
 
-                case ('u'):
-                    run_tests_flag = TRUE;
-                    break;
-
                 default:
                     printf("Unrecognized option: %s\n", argv[arg]);
                     print_help();
@@ -146,7 +137,7 @@ parse_options(int argc, char **argv)
         }
     }
 
-    if (!run_tests_flag && filename == NULL) {
+    if (filename == NULL) {
         printf("ROM file not specified\n");
         print_help();
         exit(1);
@@ -216,17 +207,9 @@ main(int argc, char **argv)
     cpu_reset();
     cpu.state = CPU_RUNNING;
     screen_scale_factor = SCALE_FACTOR;
-
     filename = parse_options(argc, argv);
- 
-    if (run_tests_flag) {
-        run_tests();
-    }
-    else {
-        start_cpu_loop(filename);
-    }
-
-    return FALSE;
+    start_cpu_loop(filename);
+    return 0;
 }
 
 /* E N D   O F   F I L E *****************************************************/
