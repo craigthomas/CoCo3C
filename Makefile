@@ -1,7 +1,7 @@
 # Copyright (C) 2013 Craig Thomas
 # This project uses an MIT style license - see LICENSE for details.
 
-NAME = trs80e
+NAME = yacoco3e
 
 COMMONSRC = cpu.c keyboard.c memory.c screen.c vdg_mc6847.c
 COMMONOBJ = cpu.o keyboard.o memory.o screen.o vdg_mc6847.o
@@ -9,8 +9,8 @@ COMMONOBJ = cpu.o keyboard.o memory.o screen.o vdg_mc6847.o
 TESTSRC = test.c cpu_tests.c memory_tests.c unit_tests.c
 TESTOBJ = test.o cpu_tests.o memory_tests.o unit_tests.o
 
-MAINSRC = trs80e.c
-MAINOBJ = trs80e.o
+MAINSRC = yacoco3e.c
+MAINOBJ = yacoco3e.o
 
 CFLAGS += -Wall -g $(shell sdl-config --cflags)
 CTESTFLAGS = -fprofile-arcs -ftest-coverage

@@ -285,17 +285,9 @@ void memory_destroy(void);
 
 /* cpu.c */
 void cpu_set_clockrate(void);
-void cpu_nanosleep(float useconds);
 int cpu_timerinit(void);
 Uint32 cpu_timerinterrupt(Uint32 interval, void *parameters);
 void cpu_timer_countdown(void);
-long cpu_gettime(void);
-inline void cpu_clear_cc_bit(byte bit);
-inline void cpu_set_cc_bit(byte bit);
-inline byte cpu_set_bit8(byte val, byte bit);
-inline word cpu_set_bit16(word val, word bit);
-inline byte cpu_clear_bit8(byte val, byte bit);
-inline word cpu_clear_bit16(word val, word bit);
 inline void cpu_push_stack(int reg, byte value);
 inline byte cpu_pop_stack(int reg);
 inline void cpu_branch_short(int test, byte offset);
@@ -304,8 +296,6 @@ inline byte cpu_binary_add8(byte val1, byte val2, int hflag,
                              int cflag, int vflag);
 inline word cpu_binary_add16(word val1, word val2, int hflag, 
                              int cflag, int vflag);
-inline byte cpu_bit_mask(int value, int mask);
-inline int cpu_bit_mask16(word value, word mask);
 inline byte cpu_twos_comp8(byte val);
 inline word cpu_twos_comp16(word val);
 int cpu_get_signed16(word value);

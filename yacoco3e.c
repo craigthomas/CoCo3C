@@ -1,5 +1,5 @@
 /**
- * @file      trs80e.c
+ * @file      yacoco3e.c
  * @brief     Yet Another Color Computer 3 emulator
  * @author    Craig Thomas
  * @copyright MIT style license - see the LICENSE file for details
@@ -19,7 +19,7 @@
 /* I N C L U D E S ***********************************************************/
 
 #include <stdlib.h>
-#include "trs80e.h"
+#include "yacoco3e.h"
 
 /* F U N C T I O N S *********************************************************/
 
@@ -62,7 +62,7 @@ loadrom(char *romfilename, word address)
 void 
 print_help(void)
 {
-    printf("usage: trs80e [-h] [-s SCALE] [-t] rom\n\n");
+    printf("usage: yacoco3e [-h] [-s SCALE] [-t] rom\n\n");
     printf("Starts a simple Color Computer 3 emulator. See README.md for ");
     printf("more information, and\n LICENSE for terms of use.\n\n");
     printf("positional arguments:\n");

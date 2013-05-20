@@ -14,7 +14,7 @@
 #include <SDL.h>
 #include <SDL_ttf.h>
 #include <stdlib.h>
-#include "trs80e.h"
+#include "yacoco3e.h"
 
 /* L O C A L S ***************************************************************/
 
@@ -123,14 +123,15 @@ screen_trace_message(void)
     sprintf(buffer,
              "A:%02X B:%02X D:%04X X:%04X Y:%04X U:%04X S:%04X DP:%02X E:%d F:%d H:%d I:%d N:%d Z:%d V:%d C:%d",
              cpu.a, cpu.b, cpu.d.WORD, cpu.x.WORD, cpu.y.WORD, 
-             cpu.u.WORD, cpu.s.WORD, cpu.dp, cpu_bit_mask (cpu.cc, REG_CC_E),
-             cpu_bit_mask(cpu.cc, REG_CC_F),
-             cpu_bit_mask(cpu.cc, REG_CC_H),
-             cpu_bit_mask(cpu.cc, REG_CC_I),
-             cpu_bit_mask(cpu.cc, REG_CC_N),
-             cpu_bit_mask(cpu.cc, REG_CC_Z),
-             cpu_bit_mask(cpu.cc, REG_CC_V),
-             cpu_bit_mask(cpu.cc, REG_CC_C));
+             cpu.u.WORD, cpu.s.WORD, cpu.dp, 
+             (cpu.cc & REG_CC_E) == REG_CC_E,
+             (cpu.cc & REG_CC_F) == REG_CC_F,
+             (cpu.cc & REG_CC_H) == REG_CC_H,
+             (cpu.cc & REG_CC_I) == REG_CC_I,
+             (cpu.cc & REG_CC_N) == REG_CC_N,
+             (cpu.cc & REG_CC_Z) == REG_CC_Z,
+             (cpu.cc & REG_CC_V) == REG_CC_V,
+             (cpu.cc & REG_CC_C) == REG_CC_C);
     msg_surface = screen_render_message(buffer, COLOR_TEXT);
     screen_blit_surface(msg_surface, overlay, 10, screen_height - 38);
     SDL_FreeSurface(msg_surface);
