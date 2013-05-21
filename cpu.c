@@ -1,12 +1,10 @@
 /**
  * Copyright (C) 2013 Craig Thomas
- * This project uses an MIT style license - see LICENSE for details.
+ * This project uses an MIT style license - see the LICENSE file for details.
  *
  * @file      cpu.c
  * @brief     Functions used to implement the Motorola 6809E processor
  * @author    Craig Thomas
- * @copyright MIT style license - see the LICENSE file for details
- * @copyright @verbinclude LICENSE
  *
  * This file contains the code necessary to implement the Motorola 6809E
  * processor. It contains a full specification of each of the documented

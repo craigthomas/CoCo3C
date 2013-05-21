@@ -1,12 +1,10 @@
 /**
  * Copyright (C) 2013 Craig Thomas
- * This project uses an MIT style license - see LICENSE for details.
+ * This project uses an MIT style license - see the LICENSE file for details.
  *
  * @file      keyboard.c
  * @brief     Functions to map keypresses to emulator keys
  * @author    Craig Thomas
- * @copyright MIT style license - see the LICENSE file for details
- * @copyright @verbinclude LICENSE
  * 
  * This file contains functions that are used to access the keyboard status
  * from within the emulator.

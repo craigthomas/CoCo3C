@@ -1,12 +1,10 @@
 /**
  * Copyright (C) 2013 Craig Thomas
- * This project uses an MIT style license - see LICENSE for details.
+ * This project uses an MIT style license - see the LICENSE file for details.
  *
  * @file      screen.c
  * @brief     Functions and routines for drawing items to the screen.
  * @author    Craig Thomas
- * @copyright MIT style license - see the LICENSE file for details
- * @copyright @verbinclude LICENSE
  * 
  * This file contains the functions needed to draw and manipulate pixels on
  * the emulator display.

@@ -1,14 +1,10 @@
 /**
  * Copyright (C) 2013 Craig Thomas
- * This project uses an MIT style license - see LICENSE for details.
+ * This project uses an MIT style license - see the LICENSE file for details.
  * 
  * @file      trs80e.c
  * @brief     Yet Another Color Computer 3 emulator
  * @author    Craig Thomas
- * @copyright MIT style license - see the LICENSE file for details
- * @copyright @verbinclude LICENSE
- *
- * This project represents a Color Computer 3 emulator.
  *
  * The test file runs the main unit tests for the emulator.
  */
