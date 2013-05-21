@@ -20,13 +20,27 @@ a Motorola 6809E processor running at 0.89 MHz.
 
 ## Current Status - May 20, 2013
 
-Please note that this project is not yet complete. As such, there is currently 
-no complete set of sourcefiles available online. Files still missing that
-prevent a successful build are:
+The project currently compiles, and can run valid 6809 assembly language
+operations. The following items work correctly:
 
-* `memory.c`
-* `memory_tests.c`
-* `vdg_mc6847.c`
+* Keyboard status can be read at $FF00 and $FF02
+* Semi-graphics 4 video display
+* Semi-graphics 4 alphanumeric characters only (no graphics characters)
+* Green background with black border only
+* 512K memory only
+
+## Roadmap
+
+The following items are currently under construction:
+
+* Complete implementation of MMU
+* CoCo 1/2 IRQ and FIRQ interrupts
+* CoCo 3 IRQ and FIRQ interrupts
+* Correct opcycle times
+* Hardware initialization and reset initialization routines
+* Timer registers
+* High resolution displays
+* Low resolution displays
 
 
 ## License
@@ -63,6 +77,13 @@ in the source directory called:
     yacoco3e
 
 The binary stands for "Yet Another Color Computer 3 Emulator".
+
+### Unit Tests
+
+The project currently has a handful of unit tests to test the basic operation
+of the emulator. To run the unit tests:
+
+    make test
 
 
 ## Further Documentation
