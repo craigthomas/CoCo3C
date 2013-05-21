@@ -18,10 +18,16 @@ machines such as the TRS-80 Model I, II, III, and 4. While that family
 of computers used a Zilog Z80 microprocessor, the Color Computer family used 
 a Motorola 6809E processor running at 0.89 MHz. 
 
-## Current Status - May 13, 2013
+## Current Status - May 20, 2013
 
 Please note that this project is not yet complete. As such, there is currently 
-no complete set of sourcefiles available online. 
+no complete set of sourcefiles available online. Files still missing that
+prevent a successful build are:
+
+* `keyboard.c`
+* `memory.c`
+* `memory_tests.c`
+* `vdg_mc6847.c`
 
 
 ## License
@@ -55,9 +61,9 @@ an ARM based C compiler, simply override the `CC` variable during the build:
 Regardless of the compiler, a successful build should result in a single binary
 in the source directory called:
 
-    trs80e
+    yacoco3e
 
-The binary stands for "Yet Another TRS-80 Emulator".
+The binary stands for "Yet Another Color Computer 3 Emulator".
 
 
 ## Further Documentation
