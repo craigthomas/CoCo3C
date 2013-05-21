@@ -24,7 +24,6 @@ Please note that this project is not yet complete. As such, there is currently
 no complete set of sourcefiles available online. Files still missing that
 prevent a successful build are:
 
-* `keyboard.c`
 * `memory.c`
 * `memory_tests.c`
 * `vdg_mc6847.c`
