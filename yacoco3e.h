@@ -1,4 +1,6 @@
-/*!
+/**
+ * Copyright (C) 2013 Craig Thomas
+ *
  * @file      trs80e.h
  * @brief     Global variables and structures defined for the emulator.
  * @author    Craig Thomas

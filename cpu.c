@@ -1,4 +1,6 @@
 /**
+ * Copyright (C) 2013 Craig Thomas
+ *
  * @file      cpu.c
  * @brief     Functions used to implement the Motorola 6809E processor
  * @author    Craig Thomas

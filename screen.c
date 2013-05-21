@@ -1,6 +1,8 @@
-/*!
- * @file     screen.c
- * @brief    Functions and routines for drawing items to the screen.
+/**
+ * Copyright (C) 2013 Craig Thomas
+ *
+ * @file      screen.c
+ * @brief     Functions and routines for drawing items to the screen.
  * @author    Craig Thomas
  * @copyright MIT style license - see the LICENSE file for details
  * @copyright @verbinclude LICENSE

@@ -1,4 +1,6 @@
 /**
+ * Copyright (C) 2013 Craig Thomas
+ *
  * @file      yacoco3e.c
  * @brief     Yet Another Color Computer 3 emulator
  * @author    Craig Thomas

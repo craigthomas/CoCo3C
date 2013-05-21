@@ -1,4 +1,6 @@
 /**
+ * Copyright (C) 2013 Craig Thomas
+ *
  * @file      cpu_tests.c
  * @brief     Functions used to test the cpu
  * @author    Craig Thomas
