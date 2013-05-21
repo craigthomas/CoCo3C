@@ -1,5 +1,6 @@
 /**
  * Copyright (C) 2013 Craig Thomas
+ * This project uses an MIT style license - see LICENSE for details.
  *
  * @file      trs80e.h
  * @brief     Global variables and structures defined for the emulator.

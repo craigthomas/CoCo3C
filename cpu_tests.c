@@ -1,13 +1,12 @@
 /**
  * Copyright (C) 2013 Craig Thomas
+ * This project uses an MIT style license - see LICENSE for details.
  *
  * @file      cpu_tests.c
  * @brief     Functions used to test the cpu
  * @author    Craig Thomas
  * @copyright MIT style license - see the LICENSE file for details
  * @copyright @verbinclude LICENSE
- *
- * This project represents a Color Computer 3 emulator.
  */
 
 /* I N C L U D E S ************************************************************/

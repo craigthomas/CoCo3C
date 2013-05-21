@@ -1,5 +1,6 @@
 /**
  * Copyright (C) 2013 Craig Thomas
+ * This project uses an MIT style license - see LICENSE for details.
  *
  * @file      keyboard.c
  * @brief     Functions to map keypresses to emulator keys

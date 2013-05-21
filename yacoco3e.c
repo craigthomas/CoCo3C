@@ -1,5 +1,6 @@
 /**
  * Copyright (C) 2013 Craig Thomas
+ * This project uses an MIT style license - see LICENSE for details.
  *
  * @file      yacoco3e.c
  * @brief     Yet Another Color Computer 3 emulator
@@ -8,7 +9,6 @@
  * @copyright @verbinclude LICENSE
  *
  * This project represents a Color Computer 3 emulator.
- *
  * In addition to the emulator keys, there are several special keys: 
  *
  *     F4        Immediately exits the emulator
