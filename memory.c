@@ -36,7 +36,8 @@
  * @param[in] wflag Whether to read (0) or write (1) to the memory location.
  * @return The 8-bit value read or written.
  */
-inline byte memory_access (register word address, byte value, int wflag)
+inline byte 
+memory_access(register word address, byte value, int wflag)
 {
     byte newbyte;
     word mask;
